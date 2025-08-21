@@ -15,6 +15,8 @@
 2. **Sistema Solar Interactivo** - Simulación astronómica con controles de cámara
 3. **Sistema Solar V2** - Visualización CSS avanzada con efectos de paralaje
 
+![Preview Screenshot](preview/Screenshot_2.png)
+
 ## ✨ Características Principales
 
 ### 🎨 Fondo Dinámico Razer
@@ -192,3 +194,4 @@ Si tienes preguntas o encuentras problemas:
 ---
 
 **¡Disfruta explorando el cosmos digital! 🌌✨**
+
