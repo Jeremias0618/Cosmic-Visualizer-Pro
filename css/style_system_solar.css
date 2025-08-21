@@ -1,0 +1,70 @@
+  :root{
+    --ui-bg: rgba(4,6,8,.5);
+    --ui-accent: #8ef6a2;
+    --text: #d7fff0;
+  }
+  html,body{height:100%;margin:0;background:#000;overflow:hidden;font-family:Inter,Ui-sans-serif,system-ui,Arial;}
+  canvas{display:block;position:fixed;inset:0;width:100%;height:100%;}
+  .ui {
+    position: fixed;
+    right: 16px;
+    top: 16px;
+    background: var(--ui-bg);
+    color: var(--text);
+    padding: 10px 12px;
+    border-radius: 10px;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    box-shadow: 0 6px 30px rgba(0,0,0,.6);
+    font-size: 13px;
+    z-index: 20;
+    max-width: 320px;
+  }
+  .ui h3{margin:0 0 8px 0;font-size:14px;color:var(--ui-accent)}
+  .row{display:flex;align-items:center;gap:8px;margin:6px 0}
+  .row label{flex:1;opacity:.95}
+  input[type="range"]{width:120px}
+  .footer {
+    position: fixed;
+    left: 16px;
+    bottom: 16px;
+    color: rgba(215,255,240,.6);
+    font-size:12px;
+    backdrop-filter: blur(4px);
+  }
+  .legend{margin-top:8px;font-size:12px;opacity:.85}
+  button, .small-btn {
+    background:transparent;border:1px solid rgba(142,246,162,.18);color:var(--text);
+    padding:6px 8px;border-radius:8px;cursor:pointer;font-size:13px;
+  }
+  button:hover{border-color:var(--ui-accent)}
+  .small-btn{padding:4px 6px;font-size:12px}
+  .center-hint{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);color:rgba(215,255,240,.06);font-size:40px;pointer-events:none}
+  @media (max-width:520px){ .ui{left:8px;right:8px;top:auto;bottom:8px;max-width:none} }
+
+    .btn-razer {
+    display: inline-block;
+    padding: 8px 18px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #00ff7f;
+    background: transparent;
+    border: 2px solid #00ff7f;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 10px #00ff7f, inset 0 0 10px #00ff7f;
+  }
+
+  .btn-razer:hover {
+    background: #00ff7f;
+    color: #000;
+    box-shadow: 0 0 20px #00ff7f, inset 0 0 20px #00ff7f;
+    transform: scale(1.05);
+  }
+
+  .btn-razer:active {
+    transform: scale(0.95);
+  }

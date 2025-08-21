@@ -1,0 +1,66 @@
+    html, body {
+      height: 100%;
+      margin: 0;
+      background: #0b0f10; 
+      overflow: hidden;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    }
+    canvas {
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+      display: block;
+    }
+
+    .hud {
+      position: fixed;
+      right: 1rem;
+      bottom: 1rem;
+      background: rgba(0,0,0,.45);
+      color: #d1fae5;
+      border: 1px solid rgba(16,185,129,.35);
+      padding: .65rem .8rem;
+      border-radius: 14px;
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      user-select: none;
+      font-size: 12px;
+      line-height: 1.25;
+      box-shadow: 0 8px 30px rgba(0,0,0,.35);
+    }
+    .hud code { color: #86efac; }
+    .row { display: flex; align-items: center; gap:.5rem; margin-top: .35rem; }
+    .row label { opacity:.9; }
+    .row input[type="range"] { width: 140px; }
+    .row input[type="checkbox"] { transform: translateY(1px); }
+    .brand {
+      position: fixed; left: 1rem; bottom: 1rem; opacity: .25; color: #a7f3d0; font-size: 12px
+    }
+
+    .btn-razer {
+      display: inline-block;
+      padding: 10px 22px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #00ff7f;
+      background: transparent;
+      border: 2px solid #00ff7f;
+      border-radius: 8px;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: 0.3s ease-in-out;
+      box-shadow: 0 0 10px #00ff7f, inset 0 0 10px #00ff7f;
+    }
+
+    .btn-razer:hover {
+      background: #00ff7f;
+      color: #000;
+      box-shadow: 0 0 20px #00ff7f, inset 0 0 20px #00ff7f;
+      transform: scale(1.05);
+    }
+
+    .btn-razer:active {
+      transform: scale(0.95);
+    }

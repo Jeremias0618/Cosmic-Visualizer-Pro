@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fondo Dinámico Razer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <canvas id="bg"></canvas>
+
+  <div class="hud" id="hud">
+    <div><strong>Fondo de cuadros</strong> <span style="opacity:.6">(JS)</span></div>
+    <div class="row">
+      <label for="density">Densidad</label>
+      <input id="density" type="range" min="8" max="64" value="24" />
+    </div>
+    <div class="row">
+      <label for="speed">Velocidad</label>
+      <input id="speed" type="range" min="1" max="200" value="60" />
+    </div>
+    <div class="row">
+      <label for="hueCycle">Ciclo de color</label>
+      <input id="hueCycle" type="checkbox" checked />
+    </div>
+    <div class="row">
+      <label for="glow">Brillo</label>
+      <input id="glow" type="range" min="0" max="50" value="28" />
+    </div>
+    <div style="opacity:.7;margin-top:.35rem">Tip: haz <code>click</code> o mueve el mouse para perturbar la onda.</div>
+    <div class="row" style="margin-top:1rem; text-align:center;">
+      <button class="btn-razer" onclick="window.open('planet.html', '_blank')">Ir a Planet</button>
+    </div>
+  </div>
+
+  <div class="brand">Hecho con ♥ en JS</div>
+  <script src="js/script.js"></script>
+</body>
+</html>
